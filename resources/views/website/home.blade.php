@@ -12,8 +12,9 @@
     
 @include('website.slider')
 
+<div class="container">
 
-
+</div>
 
  
 </body>

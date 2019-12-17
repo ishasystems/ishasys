@@ -10,11 +10,11 @@
 </head>
 <body>
     
-@include('website.slider')
+@include('website.home.slider')
 
-<div class="container">
+@include('website.home.about')
 
-</div>
+
 
  
 </body>

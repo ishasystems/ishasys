@@ -40,3 +40,11 @@ Route::get('product', function(){
 
 
 
+// testing stash command 
+
+Route::get('test',function(){
+    return "hello test";
+});
+
+
+

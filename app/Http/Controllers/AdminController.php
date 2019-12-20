@@ -36,11 +36,18 @@ class AdminController extends Controller
 
     public function vendorList()
     {
-
+        $vendors = vendor::all();
+            return view('admin.vendor',compact('vendors'));
     }
 
     public function addVendor(Request $request)
     {
+        $vendors = new vendor;
+        $vendors->full_name = $request->get('full_name');
+        $vendors->short_name = $request->get('short_name');
+        $vendors->save();
+
+        return redirect()->back();
 
     }
 
@@ -51,16 +58,21 @@ class AdminController extends Controller
 
     public function categoryList()
     {
-
+        $category = product_category::all()->where('status',1);
+        return view("admin.category",compact('category'));
     }
 
     public function addCategory(Request $request)
     {
+        $category = new product_category;
+        $category->category = $request->get('name');
+        $category ->save();
 
+        return redirect()->back();
     }
     public function updateCategory(Request $request)
     {
-
+        
     }
 
 

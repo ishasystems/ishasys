@@ -68,8 +68,9 @@ class AdminController extends Controller
         $category->category = $request->get('name');
         $category ->save();
 
+
         return redirect()->back();
-    }
+   }
     public function updateCategory(Request $request)
     {
         

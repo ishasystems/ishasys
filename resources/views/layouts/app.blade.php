@@ -11,92 +11,17 @@
     <title>{{ config('app.company', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
-
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    {{-- <link rel="dns-prefetch" href="https://fonts.gstatic.com"> --}}
-    {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css"> --}}
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-            {{-- <a class="navbar-brand" href="#">WebSiteName</a> --}}
-            <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.company', 'Laravel') }}
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                @guest
-
-                @else
-                <li class="active">
-                    <a class="nav-link" href="{{ route('product.list') }}">{{ __('products') }}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('vendor.list') }}">{{ __('vendors') }}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('category.list') }}">{{ __('Product Category') }}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('type.list') }}">{{ __('Product Type') }}</a>
-                </li>
-              {{-- <li class="active"><a href="#">Home</a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Page 1-1</a></li>
-                  <li><a href="#">Page 1-2</a></li>
-                  <li><a href="#">Page 1-3</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Page 2</a></li>
-              <li><a href="#">Page 3</a></li> --}}
-              @endguest
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-            @guest
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-            </li>
-              @else
-              <li>
-              <a  href="{{ route('logout') }}"
-              onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();">
-               {{ __('Logout') }}
-           </a>
-        </li>
-
-           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-               @csrf
-           </form>
-           @endguest
-
-
-
-            </ul>
-          </div>
-        </div>
-      </nav>
-    {{-- <div id="app">
+    <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -116,13 +41,13 @@
                             <a class="nav-link" href="{{ route('product.list') }}">{{ __('products') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('vendor.list') }}">{{ __('vendors') }}</a>
+                            <a class="nav-link" href="#">{{ __('vendors') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('category.list') }}">{{ __('Product Category') }}</a>
+                            <a class="nav-link" href="#">{{ __('Product Category') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('type.list') }}">{{ __('Product Type') }}</a>
+                            <a class="nav-link" href="#">{{ __('Product Type') }}</a>
                         </li>
 
                         @endguest
@@ -166,6 +91,7 @@
         <main class="py-4">
             @yield('content')
         </main>
-    </div> --}}
+    </div>
 </body>
 </html>
+

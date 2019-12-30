@@ -14,6 +14,8 @@
 
 @include('website.home.about')
 
+@include('website.home.our_service')
+
 
 
  

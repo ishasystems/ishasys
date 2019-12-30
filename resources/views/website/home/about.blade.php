@@ -19,7 +19,7 @@
                     <div class="feature-box">
                         <div class="clearfix">
                             <div class="iconset">
-                                <span class="glyphicon glyphicon-cog icon"></span>
+                                <span class="fa fa-cog icon"></span>
                             </div>
                             <div class="feature-content">
                                 <h4>Work with heart</h4>
@@ -30,7 +30,7 @@
                     <div class="feature-box">
                         <div class="clearfix">
                             <div class="iconset">
-                                <span class="glyphicon glyphicon-cog icon"></span>
+                                <span class="fa fa-cog icon"></span>
                             </div>
                             <div class="feature-content">
                                 <h4>Reliable services</h4>
@@ -41,7 +41,7 @@
                     <div class="feature-box">
                         <div class="clearfix">
                             <div class="iconset">
-                                <span class="glyphicon glyphicon-cog icon"></span>
+                                <span class="fa fa-cog icon"></span>
                             </div>
                             <div class="feature-content">
                                 <h4>Great support</h4>

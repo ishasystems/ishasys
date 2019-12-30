@@ -10,11 +10,11 @@
     <div class="head">
       <a href="#" class="brand">
         <div class="logo">
-          <img class="image" src="{{ asset('image/logo.png') }}" data2x="https://66.media.tumblr.com/avatar_2dcdc7cf5b47_128.png" alt="Branding" />
+          <img class="image" src="{{ asset('image/logo.png') }}" data2x="https://66.media.tumblr.com/avatar_2dcdc7cf5b47_128.png" alt="Ishasystems & software" />
         </div>
-        <div class="title">
+        {{-- <div class="title">
           <h3>Company</h3>
-        </div>
+        </div> --}}
       </a>
     </div>
     <div class="body">

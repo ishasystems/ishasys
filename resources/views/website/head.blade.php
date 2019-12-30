@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
 <script src="{{ asset('js/slider.js') }}"></script>
 <link rel="stylesheet" href="{{ asset('css/home_about.css') }}">
+<link rel="stylesheet" href="{{ asset('css/home_service.css') }}">
 
 <!-- slider lib end  -->
 {{-- end home page lib --}}

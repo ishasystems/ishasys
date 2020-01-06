@@ -3,13 +3,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
  
     <link rel="shortcut icon" href="{{ asset('image/logo.ico') }}" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"> -->
+     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"> 
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    {{-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> --}}
 {{-- home page lib --}}
     <!-- slider lib -->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+{{-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> --}}
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
@@ -22,6 +22,10 @@
 <script src="{{ asset('js/slider.js') }}"></script>
 <link rel="stylesheet" href="{{ asset('css/home_about.css') }}">
 <link rel="stylesheet" href="{{ asset('css/home_service.css') }}">
+<link rel="stylesheet" href="{{ asset('css/testimonial.css') }}">
+<link rel="stylesheet" href="{{asset('css/contact.css')}}">
+{{-- <link rel="stylesheet" href="{{ asset('css/product.css') }}"> --}}
+
 
 <!-- slider lib end  -->
 {{-- end home page lib --}}

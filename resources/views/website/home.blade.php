@@ -16,8 +16,12 @@
 
 @include('website.home.our_service')
 
+@include('website.home.parralex')
+
+@include('website.home.testimonial')
 
 
- 
+
+ @include('website.footer')
 </body>
 </html>

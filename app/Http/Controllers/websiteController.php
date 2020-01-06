@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class websiteController extends Controller
 {
-    //
+    public function getCategoryList()
+    {
+        
+    }
 }

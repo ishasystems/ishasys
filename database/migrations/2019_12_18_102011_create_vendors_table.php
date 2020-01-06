@@ -17,6 +17,7 @@ class CreateVendorsTable extends Migration
             $table->increments('id');
             $table->string('full_name');
             $table->string('short_name');
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }

@@ -11,29 +11,31 @@
 |
  */
 
+
 Route::get('/', function () {
+
     return view('website.home');
-});
+})->name('home-page');
 
 Route::get('about', function () {
     return view('website.about');
-});
+})->name('about');
 
 Route::get('services', function () {
     return view('website.service');
-});
+})->name('services');
 
 Route::get('protfolio', function () {
     return view('website.portfolio');
-});
+})->name('portfolio');
 
 Route::get('contact', function () {
     return view('website.contact');
-});
+})->name('contact');
 
 Route::get('product', function () {
     return view('website.product');
-});
+})->name('product');
 
 // testing stash command
 
@@ -57,6 +59,8 @@ Route::group(["middleware" => "auth", "prefix" => "admin"], function () {
     Route::post('add-vendor', 'AdminController@addVendor')->name('vendor.add');
     Route::get('category','AdminController@categoryList')->name('category.list');
     Route::post('add-category','AdminController@addCategory')->name('category.add');
+    Route::post('update-category','AdminController@updateCategory')->name('category.update');
+    Route::get('delete-category/{id}','AdminController@deleteCategory')->name('category.delete');
     Route::get('type','AdminController@typeList')->name('type.list');
     Route::post('add-type','AdminController@addType')->name('type.add');
 

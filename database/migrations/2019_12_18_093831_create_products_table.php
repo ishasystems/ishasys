@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->integer('category_id');
             $table->integer('type_id')->nullable();
             $table->string('product_feature');
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }

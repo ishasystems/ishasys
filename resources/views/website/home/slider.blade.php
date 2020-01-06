@@ -1,41 +1,60 @@
 <header>
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found">
+                <img src="{{ asset('image/slider/1.jpg') }}" alt="images not found">
+               
+                {{-- <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found"> --}}
                 <div class="cover">
                     <div class="container">
                         <div class="header-content">
                             <div class="line"></div>
-                            <h2>Teimagine Digital Experience with</h2>
-                            <h1>Start-ups and solutions</h1>
-                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                            {{-- <h2>Teimagine Digital Experience with</h2> --}}
+                            <h1>CCTV & SURVILLANCE</h1>
+                            {{-- <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4> --}}
                         </div>
                     </div>
                  </div>
             </div>
             <div class="item">
                 {{-- <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found"> --}}
-                <img src="{{ asset('image/slider/1.jpeg') }}" alt="images not found">
+                <img src="{{ asset('image/slider/2.jpeg') }}" alt="images not found">
                 <div class="cover">
                     <div class="container">
                         <div class="header-content">
                             <div class="line animated bounceInLeft"></div>
-                            <h2>Reimagine Digital Experience with</h2>
-                            <h1>Intelligent solutions</h1>
-                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                            <h1>BEST BIOMETRICS & ACCESS CONTROL SYSTEM</h1>
+                            {{-- <h1>Intelligent solutions</h1> --}}
+                            {{-- <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4> --}}
                         </div>
                     </div>
                  </div>
             </div>
             <div class="item">
-                <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found">
+                <img src="{{ asset('image/slider/3.jpeg') }}" alt="images not found">
+               
+                {{-- <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found"> --}}
                 <div class="cover">
                     <div class="container">
                         <div class="header-content">
                             <div class="line animated bounceInLeft"></div>
-                            <h2>Peimagine Digital Experience with</h2>
-                            <h1>Intelligent Solutions</h1>
-                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                            {{-- <h2>Peimagine Digital Experience with</h2> --}}
+                            <h1>ERP & ATTENDANCE SOFTWARE</h1>
+                            {{-- <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4> --}}
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="item">
+                <img src="{{ asset('image/slider/4.jpeg') }}" alt="images not found">
+               
+                {{-- <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found"> --}}
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            {{-- <h2>Peimagine Digital Experience with</h2> --}}
+                            <h1>GATE AUTOMATION & SOLUTION</h1>
+                            {{-- <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4> --}}
                         </div>
                     </div>
                  </div>

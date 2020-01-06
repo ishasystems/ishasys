@@ -8,7 +8,7 @@
 <nav id="navbar" class="push better-nav fixed-top">
   <div class="container">
     <div class="head">
-      <a href="#" class="brand">
+    <a href="{{ route('home-page') }}" class="brand">
         <div class="logo">
           <img class="image" src="{{ asset('image/logo.png') }}" data2x="https://66.media.tumblr.com/avatar_2dcdc7cf5b47_128.png" alt="Ishasystems & software" />
         </div>
@@ -19,19 +19,30 @@
     </div>
     <div class="body">
       <ul>
-        <li class="home active"><a href="#">Home</a></li>
-        <li class="page"><a href="#">About</a></li>
-        <li class="page"><a href="#">Services</a></li>
+      <li class="home active"><a href="{{ route('home-page') }}">Home</a></li>
+        <li class="page"><a href="{{ route('about') }}">About</a></li>
+        <li class="page"><a href="{{ route('services') }}">Services</a></li>
 
         <li class="blog dropdown"><a href="#">Products</a>
-          <span class="selector"></span>
-          <ul style="background: #000;">
-            <li><a href="#">Latest</a></li>
-            <li><a href="#">Popular</a></li>
-            <li class="dropdown"><a href="#">Categories</a>
+          <span class="fa fa-arrow-down"></span>
+          <ul style="background: #fff; color:#000 !important;">
+            @php
+                $products= productMenu();
+            @endphp
+            @if (count($products)>0)
+              @foreach ($products as $item)
+          <li><a href="{{ route('product',$item->id) }}">{{ $item->product_category }}</a></li>
+              @endforeach
+                
+            @endif
+            {{-- <li><a href="#">Biometrics</a></li>
+            <li><a href="#">Biometrics & Access</a></li>
+            <li><a href="#">Turnstile</a></li> --}}
+
+            {{-- <li class="dropdown"><a href="#">Biometrics</a>
               <span class="selector"></span>
               <ul style="background:#000">
-                <li><a href="#">HTML</a></li>
+                <li><a href="#">X990</a></li>
                 <li class="dropdown"><a href="#">CSS</a>
                   <span class="selector"></span>
                   <ul style="background:#000">
@@ -39,7 +50,7 @@
                     <li><a href="#">CSS3</a></li>
                   </ul>
                 </li>
-                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">I9c</a></li>
                 <li class="dropdown"><a href="#">Others</a>
                   <span class="selector"></span>
                   <ul style="background:#000">
@@ -48,12 +59,13 @@
                   </ul>
                 </li>
               </ul>
-            </li>
+            </li> --}}
+
           </ul>
         </li>
-        <li class="page"><a href="#">Portfolio</a></li>
+        <li class="page"><a href="{{ route('portfolio') }}">Portfolio</a></li>
 
-        <li class="page"><a href="#">Contacts</a></li>
+        <li class="page"><a href="{{ route('contact') }}">Contacts</a></li>
         <!-- <li class="more dropdown"><a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
           <span class="selector"></span>
           <ul>

@@ -24,14 +24,14 @@
         <li class="page"><a href="{{ route('services') }}">Services</a></li>
 
         <li class="blog dropdown"><a href="#">Products</a>
-          <span class="fa fa-arrow-down"></span>
-          <ul style="background: #fff; color:#000 !important;">
+          {{-- <i class="fa fa-arrow-down"></i> --}}
+          <ul style="background: #fff;">
             @php
                 $products= productMenu();
             @endphp
             @if (count($products)>0)
               @foreach ($products as $item)
-          <li><a href="{{ route('product',$item->id) }}">{{ $item->product_category }}</a></li>
+          <li><a href="{{ route('product',$item->id) }}" style="color:#000 !important;">{{ $item->category_name }}</a></li>
               @endforeach
                 
             @endif

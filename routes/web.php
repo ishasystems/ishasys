@@ -33,15 +33,11 @@ Route::get('contact', function () {
     return view('website.contact');
 })->name('contact');
 
-Route::get('product', function () {
-    return view('website.product');
-})->name('product');
+Route::get('product/{id}','websiteController@getproductlist')->name('product');
+Route::get('product/single/{id}','websiteController@getSingleProduct')->name('product.single');
 
 // testing stash command
 
-Route::get('test', function () {
-    return "hello test";
-});
 
 Auth::routes();
 
@@ -55,6 +51,7 @@ Route::group(["middleware" => "auth", "prefix" => "admin"], function () {
     Route::post('add-product', 'AdminController@addProduct')->name('product.post');
     Route::get('edit-product/{id}', 'AdminController@editProductForm')->name('product.edit-form');
     Route::post('edit-product', 'AdminController@updateProduct')->name('product.update');
+    Route::get('delete-product/{id}','AdminController@deleteProduct')->name('product.delete');
     Route::get('vendor', 'AdminController@vendorList')->name('vendor.list');
     Route::post('add-vendor', 'AdminController@addVendor')->name('vendor.add');
     Route::get('category','AdminController@categoryList')->name('category.list');

@@ -1,0 +1,64 @@
+@include('admin.nav');
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            @if($errors->any())
+              <h4>{{$errors->first()}}</h4>
+             @endif
+
+        <form action="{{ route('product.update') }}" method="POST" role="form" enctype="multipart/form-data">
+                {{ csrf_field() }}   
+            <legend>Update Product</legend>
+        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                <div class="form-group">
+                    <label for="">product name</label>
+                <input type="text" value="{{ $product->product_name }}" name="product_name" class="form-control" id="" placeholder="Product Name">
+                </div>
+                <div class="form-group">
+                    <label for="">Product Category</label>
+                    <select name="category_id" class="form-control">
+                        @if (count($category) >0)
+                                @foreach ($category as $item)
+                    <option value="{{ $item->id }}" {{ ($item->id == $product->category_id)?"selected": "" }}>{{ $item->category_name}}</option>
+                                    
+                                @endforeach
+                        @endif
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="product">Highlights</label>
+                    <textarea name="product_description"  id="editor" cols="30" rows="10" class="form-control">
+                        {!! $product->product_description !!}
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Technical Specification (Enter data in table)</label>
+                    <textarea name="technical_spec" id="editor1" class="editor form-control" cols="30" rows="10">{!! $product->pro_specification !!}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Catalogue</label>
+                    <input type="file" name="catalogue" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Product Image</label>
+                    <input type="file" name="image" class="form-control">
+                </div>
+
+
+
+                <button type="submit" class="btn btn-primary">Update </button>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    CKEDITOR.replace( 'editor' );
+    CKEDITOR.replace( 'editor1' );
+
+</script>

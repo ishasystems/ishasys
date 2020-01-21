@@ -6,13 +6,12 @@
      <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"> 
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
-    {{-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> --}}
-{{-- home page lib --}}
-    <!-- slider lib -->
-{{-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> --}}
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 <!------ Include the above in your HEAD tag ---------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -24,7 +23,14 @@
 <link rel="stylesheet" href="{{ asset('css/home_service.css') }}">
 <link rel="stylesheet" href="{{ asset('css/testimonial.css') }}">
 <link rel="stylesheet" href="{{asset('css/contact.css')}}">
-{{-- <link rel="stylesheet" href="{{ asset('css/product.css') }}"> --}}
+<link rel="stylesheet" href="{{ asset('css/product.css') }}">
+<link rel="stylesheet" href="{{ asset('css/single.css') }}">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+{{-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> --}}
+{{-- <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> --}}
+
+
 
 
 <!-- slider lib end  -->

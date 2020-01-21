@@ -21,6 +21,7 @@
                                 <th>product</th>
                                 <th>category</th>
                                 <th>image</th>
+                                <th>description</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -32,7 +33,8 @@
                                         <td>{{$product->product_name}}</td>
                                         <td>{{ $product->product_category[0]->category_name }}</td>
                                         <td><img src='{{ asset("products/$product->product_img") }}' alt="" class="img-responsive" width="100" height="100"></td>
-                                        <td><a href=""><i class="fa fa-pencil"></i></a>&nbsp;&nbsp; <a href="" style="color:red"><i class="fa fa-trash-o"></i></a></td>
+                                        <td>{!! $product->product_description !!}</td>
+                                        <td><a href="{{ route('product.edit-form', $product->id) }}"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp; <a href="{{ route('product.delete',$product->id) }}" style="color:red"><i class="fa fa-trash-o"></i></a></td>
 
                                         </tr>
                                 @endforeach

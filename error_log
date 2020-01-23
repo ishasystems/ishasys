@@ -1,0 +1,3 @@
+
+[23-Jan-2020 10:21:15 UTC] PHP Notice:  Undefined index: argv in /home/w2feqzv04x3c/public_html/vendor/symfony/console/Input/ArgvInput.php on line 52
+[23-Jan-2020 10:21:15 UTC] PHP Warning:  array_shift() expects parameter 1 to be array, null given in /home/w2feqzv04x3c/public_html/vendor/symfony/console/Input/ArgvInput.php on line 56

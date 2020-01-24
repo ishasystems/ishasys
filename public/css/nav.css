@@ -3,9 +3,9 @@
 
 /* Navbar */
 .better-nav { word-wrap: break-word; background: #1B343B; height: 100px; margin-bottom: 30px; } /* Set the height of the navbar */
-.better-nav a { color: #fff; opacity: 0.6; }
+.better-nav a { color: #fff;  }
 .better-nav a:hover,
-.better-nav a:focus { opacity: 1; }
+/* .better-nav a:focus { } */
 .better-nav .container { height: 100%; }
 .container .better-nav .container { max-width: 100%; }
 /* Fixed */
@@ -114,7 +114,7 @@
 }
 
 /* Dummy Content */
-dummy { display: block; margin: 30px 0 0; }
+/* dummy { display: block; margin: 30px 0 0; }
 dummy article { display: block; text-align: center; margin-bottom: 30px; }
 dummy article content { text-align: center; background: rgba(0,0,0,0.1); display: block; padding: 50px; }
 dummy article content::before { content: "\f03e"; font: normal normal normal 50px/1 FontAwesome; opacity: 0.2; }
@@ -123,4 +123,4 @@ dummy article content h3 { font-size: 24px; font-weight: bold; opacity: 0.2; fon
 dummy article content ul { list-style: none; padding: 0; margin: 0; font-weight: bold; opacity: 0.5; font-family: 'Comfortaa', cursive; }
 dummy article content ul li { background: rgba(255,255,255,1); margin: 15px 0; padding: 10px; border-radius: 10px; }
 
-dummy { max-width: 970px; }
+dummy { max-width: 970px; } */

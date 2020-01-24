@@ -1,7 +1,7 @@
 <header>
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img src="{{ asset('image/slider/1.jpg') }}" alt="images not found">
+                <img src="{{ asset('public/image/slider/1.jpg') }}" alt="images not found">
                
                 {{-- <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found"> --}}
                 <div class="cover">
@@ -17,7 +17,7 @@
             </div>
             <div class="item">
                 {{-- <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found"> --}}
-                <img src="{{ asset('image/slider/2.jpeg') }}" alt="images not found">
+                <img src="{{ asset('public/image/slider/2.jpeg') }}" alt="images not found">
                 <div class="cover">
                     <div class="container">
                         <div class="header-content">
@@ -30,7 +30,7 @@
                  </div>
             </div>
             <div class="item">
-                <img src="{{ asset('image/slider/3.jpeg') }}" alt="images not found">
+                <img src="{{ asset('public/image/slider/3.jpeg') }}" alt="images not found">
                
                 {{-- <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found"> --}}
                 <div class="cover">
@@ -45,7 +45,7 @@
                  </div>
             </div>
             <div class="item">
-                <img src="{{ asset('image/slider/4.jpeg') }}" alt="images not found">
+                <img src="{{ asset('public/image/slider/4.jpeg') }}" alt="images not found">
                
                 {{-- <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found"> --}}
                 <div class="cover">

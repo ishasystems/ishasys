@@ -6,7 +6,7 @@
 	<div class="panel-heading"><h3>{{ $product->product_name }}</h3></div>
 		<div class="panel-body">
 			<div class="col-md-5">
-			<img src='{{ asset("products/$product->product_img") }}'  alt="" class="img-responsive" style="max-height:300px !important">
+			<img src='{{ asset("public/products/$product->product_img") }}'  alt="" class="img-responsive" style="max-height:300px !important">
 			</div>
 			<div class="col-md-5">
 				<h3><a href="">{{ $product->product_name }}</a></h3>
@@ -46,5 +46,18 @@
 </div>
 </div>
 
+<script>
+	$(document).ready(function(){
+		$('table').addClass('table');
+		$('table').addClass('table-striped');
+		// $('table').css('width:1')
+		$('table').attr('border','0');
+		$('table').attr('cellpadding','0');
+		$('table').attr('cellspacing','0');
+
+
+
+	})
+</script>
 
 @include('website.footer')

@@ -19,7 +19,7 @@
        
             <div class="col-md-6 col-sm-6 col-xs-12" style="padding:10px">
                 <div class="feature">
-                <img src="{{ asset('image/img/h_1.jpeg') }}" alt="" class="img-circle" width="70%">
+                <img src="{{ asset('public/image/img/h_1.jpeg') }}" alt="" class="img-circle" width="70%">
                 </div>
             </div>
         </div>

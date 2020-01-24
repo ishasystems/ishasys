@@ -9,7 +9,7 @@
       <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="text-center feature-block">
           <span class="fb-icon ">
-          <img src="{{ asset('image/icon/cctv.png') }}" alt="" class="img-responsive" width="100" height="100">
+          <img src="{{ asset('public/image/icon/cctv.png') }}" alt="" class="img-responsive" width="100" height="100">
             {{-- <i class="fa fa-cloud-upload" aria-hidden="true"></i> --}}
           </span>
           <h4 class="color-info">Time & Attendance</h4>
@@ -21,7 +21,7 @@
       <div class="col-lg-3 col-md-6 col-sm-6">
        <div class="text-center feature-block">
           <span class="fb-icon color-warning">
-            <img src="{{ asset('image/icon/biometric.png') }}" alt="" class="img-responsive" width="100" height="100">
+            <img src="{{ asset('public/image/icon/biometric.png') }}" alt="" class="img-responsive" width="100" height="100">
 
             {{-- <i class="fa fa-desktop" aria-hidden="true"></i> --}}
           </span>

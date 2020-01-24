@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="{{ asset('image/logo.ico') }}" type="image/x-icon">
      <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"> 
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/global.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/global.css?v=1.2') }}">
 
 
 <!------ Include the above in your HEAD tag ---------->

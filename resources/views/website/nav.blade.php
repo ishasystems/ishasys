@@ -10,7 +10,7 @@
     <div class="head">
     <a href="{{ route('home-page') }}" class="brand">
         <div class="logo">
-          <img class="image" src="{{ asset('image/logo.png') }}" data2x="https://66.media.tumblr.com/avatar_2dcdc7cf5b47_128.png" alt="Ishasystems & software" />
+          <img class="image" src="{{ asset('public/image/logo.png') }}" data2x="https://66.media.tumblr.com/avatar_2dcdc7cf5b47_128.png" alt="Ishasystems & software" />
         </div>
         {{-- <div class="title">
           <h3>Company</h3>

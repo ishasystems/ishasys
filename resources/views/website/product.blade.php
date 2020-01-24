@@ -11,7 +11,7 @@
 						<div class="col-md-3">
 							<div class="card">
 								<a class="img-card" href="#">
-								<img src='{{ asset("products/$product->product_img") }}' />
+								<img src='{{ asset("public/products/$product->product_img") }}' />
 							    </a>
 								<div class="card-content">
 									<h4 class="card-title">

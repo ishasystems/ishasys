@@ -41,7 +41,7 @@ Route::get('product/single/{id}','websiteController@getSingleProduct')->name('pr
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'AdminController@productList')->name('home');
 
 // admin routes
 
